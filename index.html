@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <title>TTodo</title>
+        <link href="StyleSheet.css" rel="stylesheet">
         <script>
          function getWord() {
              document.getElementById("word").innerHTML = "ulcer";
@@ -10,8 +11,10 @@
         </script>
     </head>
     <body>
-        <h1>TTodo</h1>
-        <p id="word">The wordle word today is...</p>
-        <button type="button" onclick="getWord()">Show Me the Word!</button>
+        <div id="main">
+            <h1>TTodo</h1>
+            <p id="word">The wordle word today is...</p>
+            <button type="button" onclick="getWord()">Show Me the Word!</button>
+        </div>
     </body>
 </html>
