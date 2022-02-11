@@ -6,15 +6,23 @@
         <link href="StyleSheet.css" rel="stylesheet">
         <script>
          function getWord() {
-             document.getElementById("word").innerHTML = "ulcer";
+             document.getElementById("word").innerHTML = new Date().toString();
+
          }
         </script>
     </head>
     <body>
-        <div id="main">
-            <h1>TTodo</h1>
-            <p id="word">The wordle word today is...</p>
-            <button type="button" onclick="getWord()">Show Me the Word!</button>
+        <div class="main">
+            <div class="header">
+                <h1>Wordle Word!</h1>
+            </div>
+            <div class="seperator"></div>
+            <div class="background">
+                <div class="content">
+                    <h3 id="word">The wordle word today is...</h3>
+                    <button class="btn "type="button" onclick="getWord()">Show Me the Word!</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
