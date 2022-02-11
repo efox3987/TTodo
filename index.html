@@ -3,8 +3,15 @@
     <head>
         <meta charset="UTF-8" />
         <title>TTodo</title>
+        <script>
+         function getWord() {
+             document.getElementById("word").innerHTML = "ulcer";
+         }
+        </script>
     </head>
     <body>
         <h1>TTodo</h1>
+        <p id="word">The wordle word today is...</p>
+        <button type="button" onclick="getWord()">Show Me the Word!</button>
     </body>
 </html>
